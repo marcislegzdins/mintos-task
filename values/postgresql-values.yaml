@@ -1,0 +1,15 @@
+global:
+  postgresql:
+    auth:
+      postgresPassword: "sonarPassword"
+      username: "sonarqube"
+      password: "sonarPassword"
+      database: "sonarqube"
+
+primary:
+  persistence:
+    enabled: true
+    size: 10Gi
+    storageClass: "standard"
+  service:
+    port: 5432

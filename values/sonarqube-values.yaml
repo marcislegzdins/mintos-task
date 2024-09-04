@@ -1,0 +1,16 @@
+postgresql:
+  enabled: false
+
+jdbcOverwrite:
+  enable: true
+  jdbcUrl: "jdbc:postgresql://postgresql.sonarqube.svc.cluster.local:5432/sonarqube?socketTimeout=1500"
+  jdbcUsername: "sonarqube"    
+  jdbcPassword: "sonarPassword"
+
+persistence:
+  enabled: true
+  size: 10Gi
+  storageClass: "standard"
+
+service:
+  type: ClusterIP
